@@ -13,6 +13,10 @@ type Product struct {
 	DeletedON   string
 }
 
+func GetProducts() []*Product {
+	return productList
+}
+
 var productList = []*Product{
 	&Product{
 		ID:          1,
